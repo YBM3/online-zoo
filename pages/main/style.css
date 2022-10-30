@@ -9,12 +9,10 @@ body{
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
 }
-
 li{
     display: flex;
     width: 40px;
 }
-
 section {
     display: flex;
 }
@@ -121,15 +119,12 @@ h2{
   }
 a {
     text-decoration: none;
-    color: inherit;
-    
+    color: inherit;   
 }
 li {
     list-style: none;
     width: 150px;
 }
-
-
 footer{
     background-color: black;
     color: white;
@@ -266,7 +261,6 @@ header {
 }
 .nav-text{
     width: 100px;
-
 }
 nav {
     display: flex;
@@ -301,7 +295,6 @@ nav {
     padding-left: 436px;
     font-weight: 500;
 }
-/*   wefffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff*/
 .animals{
     padding-top: 50px;
     background: url(assets/images/palm_foto.png) left bottom no-repeat, url(assets/images/strelitzia\ 1.png) right bottom no-repeat;   
