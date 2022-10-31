@@ -173,7 +173,7 @@ footer{
 .backstage {
     padding-top: 120px;
     padding-bottom: 120px;
-    background-image: url(assets/images/flower_foto1.png);
+    background-image: url(../../assets/images/flower_foto1.png);
     background-position: center right 0;
     background-repeat: no-repeat;
   }
