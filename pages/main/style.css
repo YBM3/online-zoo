@@ -180,7 +180,7 @@ footer{
 .backstage-box-image {
     min-width: 609px;
     height: 403px;
-    background-image: url(assets/images/bamboo-cap.png);
+    background-image: url(../../assets/images/bamboo-cap.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -297,7 +297,7 @@ nav {
 }
 .animals{
     padding-top: 50px;
-    background: url(assets/images/palm_foto.png) left bottom no-repeat, url(assets/images/strelitzia\ 1.png) right bottom no-repeat;   
+    background: url(../../assets/images/palm_foto.png) left bottom no-repeat, url(../../assets/images/strelitzia\ 1.png) right bottom no-repeat;   
 }
 .animal-box{
     position: relative;
@@ -323,11 +323,11 @@ nav {
     border-radius: 50%;
 }
 .btn-left {
-    background-image: url(assets/icons/arrow-left.svg), linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    background-image: url(../../assets/icons/arrow-left.svg), linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   }
   
 .btn-right {
-    background-image: url(assets/icons/arrow-right.svg), linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    background-image: url(../../assets/icons/arrow-right.svg), linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   }
 .strategy-block-txt{
     position: relative;
@@ -575,7 +575,7 @@ nav {
     height: 781px;
     left: 0px;
     top: 3813px;
-    background: url(assets/images/leav_foto.png) right bottom no-repeat;
+    background: url(../../assets/images/leav_foto.png) right bottom no-repeat;
 }
 .title-testimation{
     position: relative;
