@@ -478,6 +478,12 @@ footer{
 .progress-bar-input:not(:checked)+label:after {
     opacity: 0;
 }
+
+.progress-bar-input:checked+label,
+.progress-bar-input:checked+label:hover,
+.progress-bar-input:not(:checked)+label:hover {
+    color: #FE9013;
+}
 .progress-bar-input:checked+label:after,
 .progress-bar-input:not(:checked)+label:after {
     content: "";
@@ -490,11 +496,7 @@ footer{
     opacity: 0;
 }
 
-.progress-bar-input:checked+label,
-.progress-bar-input:checked+label:hover,
-.progress-bar-input:not(:checked)+label:hover {
-    color: #FE9013;
-}
+
 .donate-amount {
     position: relative;
     margin: 0 auto 26px;
@@ -502,7 +504,6 @@ footer{
 }
 
 .donate-input {
-    -moz-appearance: textfield;
     margin: auto;
     padding-left: 9px;
     display: flex;
