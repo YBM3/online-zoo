@@ -8,7 +8,7 @@ html{
 body{
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
-    /* overflow-x:hidden; */
+    overflow-x:hidden;
 }
 li{
     display: flex;
@@ -1429,6 +1429,14 @@ input[type=range]::-webkit-slider-runnable-track{
     }
     .footer-navigation{
         margin-left: 10px;
+    }
+    .arrow-green1{
+        transform: rotate(90deg);
+    }
+    .arrow-green2{
+        transform: rotate(90deg);
+        margin-top: 216px;
+        margin-left: 128px;
     }
 }
   
