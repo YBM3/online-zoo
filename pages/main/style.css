@@ -8,6 +8,7 @@ html{
 body{
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
+    /* overflow-x:hidden; */
 }
 li{
     display: flex;
@@ -21,7 +22,6 @@ h1{
     text-align: center;
     line-height: 120%;
     font-size: 20px;
-    background-image: url(../../assets/icons/bamboo.svg);
     background-position: 10px bottom;
     background-repeat: no-repeat;
 }
@@ -213,7 +213,7 @@ header {
     color: #FFFFFF;
     background-color: #000000;
     margin-bottom: -80px;
-    z-index: 500;
+    z-index: 10;
 }
 
 .header-box {
@@ -247,7 +247,8 @@ header {
 
 .logo-bamboo {
     position: absolute;
-    top: 20px;
+    background-image: url(../../assets/icons/bamboo.svg);
+    top: 22px;
     left: 10px;
     width: 20px;
     height: 20.98px;
@@ -295,6 +296,7 @@ nav {
     padding-left: 436px;
     font-weight: 500;
 }
+
 .animals{
     padding-top: 50px;
     background: url(../../assets/images/palm_foto.png) left bottom no-repeat, url(../../assets/images/strelitzia\ 1.png) right bottom no-repeat;   
@@ -322,6 +324,7 @@ nav {
     border: none;
     border-radius: 50%;
 }
+
 .btn-left {
     background-image: url(../../assets/icons/arrow-left.svg), linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   }
@@ -362,8 +365,7 @@ nav {
     transition: 0.3s;
   }
   
-  .box-center,
-  .box-second {
+  .box-center {
     display: flex;
     flex-wrap: wrap;
     gap: 20px 30px;
@@ -447,6 +449,9 @@ nav {
     text-align: center;
     color: #FE9013;
 }
+.arrow-green1, .arrow-green2{
+    display: none;
+}
 .title2{
     position: absolute;
     width: 843px;
@@ -466,7 +471,7 @@ nav {
     width: 990px;
     height: 21px;
     left: calc(50% - 1061px/2 + 49.5px);
-    top: 267px;
+    top: 260px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -480,7 +485,7 @@ nav {
     width: 780px;
     height: 42px;
     left: calc(50% - 863px/2 - 49.5px);
-    top: 298px;
+    top: 303px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -535,7 +540,7 @@ nav {
     margin-top: -50px;
     text-align: center;
 }
-.card-comment{
+.card-comment1, .card-comment2, .card-comment3, .card-comment4{
     box-sizing: border-box;
     flex-direction: column;
     position: relative;
@@ -596,7 +601,7 @@ nav {
     margin-bottom: -50px;
 
 }
-.comm-content{
+.comm-content {
     position: absolute;
     width: 237px;
     height: 309px;
@@ -642,7 +647,7 @@ nav {
     line-height: 120%;
     color: #BDBDBD;
 }
-.comm-content p {
+.copy, .copy1 {
     position: relative;
     display: flex;
     width: 250px;
@@ -684,15 +689,6 @@ nav {
     position: relative;
     font-size: 19.0145px;
     line-height: 120%;
-}
-
-.logo-bamboo {
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    width: 20px;
-    height: 20.98px;
-    background-repeat: no-repeat;
 }
 .donate{
     margin-top: 60px;
@@ -816,23 +812,653 @@ input[type="range"]:active::-webkit-slider-thumb{
   
 input[type="range"]::-webkit-slider-thumb:active{
     background: #4B9200;
-}
-  
-  
+} 
 input[type=range]::-webkit-slider-runnable-track{
     width: 100%;
     cursor: pointer;
-}
-  
+} 
 .bar::before{
     position: absolute;
     background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
     border-radius: 5px;
 }
-  
 .testimonials-sliderline-button{
     width: 115.19px;
     height: 6px;
     background: #FE9013;
     border-radius: 5px;
 }
+.social-media{
+    position: relative;
+    left:40px;
+    top: -27px;
+}
+.header__popup {
+    position: absolute;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    top: 50px;
+    height: 329px;
+    width: 640px;
+    background-color: #ffffff;
+    z-index: 5;
+    left: -250%;
+  }
+  .header__burger {
+    display: none;
+  }
+  .header__burger:hover {
+    cursor: pointer;
+  }
+  .burgerline {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .header__popup #menu {
+    padding-left: 10px;
+  }
+  
+  .header__popup #menu a {
+    color: #000000;
+  }
+  
+  .header__popup #menu a:hover {
+    color: #E47209;
+  }
+  
+  .header__popup #menu li {
+    padding-bottom: 15px;
+  }
+  
+  .header__popup #menu .active {
+    color: #F9804B;
+  }
+  
+  .header__popup #design a {
+    color: #000000;
+    padding-left: 10px;
+  }
+  
+  .header__popup #design a:hover {
+    color: #E47209;
+  }
+  .open {
+    left: 0%;
+  }
+  .header__popup #menu .active {
+    color: #F9804B;
+  }
+  .lineactive div:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  
+  .lineactive div:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .lineactive div:nth-child(3) {
+    -webkit-transform: translateY(0px) rotate(-45deg);
+            transform: translateY(0px) rotate(-45deg);
+  }
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__nav img {
+    margin-right: 5px;
+  }
+@media (max-width: 1599px){
+    .logo{
+        margin-left: 24px;
+    }
+    li{
+        margin-left: 10px;
+    }
+    .designed-text{
+        padding-left: 290px;
+    }
+    .promo{
+        background-image: url(../../assets/images/GiantPanda2.jpg);
+        height: 680px;
+    }
+    .favorite_animal_circle{
+        width: 405px;
+        height: 405px;
+    }
+    .promo-content{
+        width: 400px;
+        height: 300px;
+        font-size: 90px;
+    }
+    .backstage {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-image: none;
+    }
+    .wrapper {
+        width: 1060px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .backstage-box{
+        gap: 10px;
+    }
+    .backstage-box-image{
+        background-image: url(../../assets/images/bamboo-cap.jpg);
+        background-size: auto;
+        min-width: 509px;
+    }
+    .backstage-box-txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    .animal-box{
+        margin-left: 20px;
+    }
+    .animal-card{
+        width: 330px;
+        height: 416px;
+    }
+    .choose-your-favorite{
+        margin-left: 385px;
+    }
+    .box-center{
+        gap: 90px 20px;
+    }
+    .box-buttons{
+        top: 427px;
+        left: 350px;
+        width: 324px;
+    }
+    .card-comment4{
+        display: none;
+    }
+    .comm{
+        margin-left: 150px;
+    }
+    .bar {
+        left: -230px;
+    }
+    .button-lf{
+        left: -60px;
+    }
+    .footer-title-box {
+        margin-left: 574px;
+    }
+    .title-testimation{
+        left: 400px;
+    }
+    .logo-footer{
+        margin-left: 80px;
+    }
+    .donate{
+        margin-left: 80px;
+    }
+    .media{
+        margin-left: 80px;
+    }
+}
+@media (max-width: 999px){
+
+    .nav-and-designed{
+        display: none;
+    }
+    .designed-text{
+        display: none;
+    }
+    .header__popup #menu li {
+        padding-bottom: 15px;
+        display: list-item;
+        text-align: left;
+        position: relative;
+    }
+    .header__popup > nav {
+        display:grid;
+    }
+    .designed-link{
+        color:#000000;
+        font-weight: bolder;
+        font-weight: 500;
+        margin-left: 20px;
+    }
+    .header__popup > .logo{
+        color: #E47209;
+        border-color: #E47209;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    header > .wrapper > .header-box > .logo_and_menu > .nav-wrapper >.logo{
+        border: none;
+    }
+    .header__popup > .logo > .logo-text > a > .logo-bamboo{
+        background-image: url(../../assets/icons/bamboo-orange.svg);
+    }
+    .promo {
+        height: 445px;
+    }
+    .content {
+        height: 138%;
+    }
+    .favorite_animal_circle {
+        width: 300px;
+        height: 300px;
+        margin-left: 215px;
+        margin-top: 26px;
+    }
+    .promo-content {
+        width: 408px;
+        height: 333px;
+        font-size: 66px;
+        margin-left: 200px;
+        margin-bottom: 50px;
+    }
+    .watch-online{
+        position: absolute;
+        top: 247px;
+        right: 359px;
+    }
+    .backstage {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        background-image: url(../../assets/images/flower_foto1.png);
+        background-position: center right 0;
+        background-repeat: no-repeat;
+    }
+    .backstage-box-image{
+        display: none;
+    }
+    header{
+        height: 50px;
+    }
+    .backstage-box{
+        width: 500px;
+        font-size: 20px;
+    }
+    .box-buttons {
+        top: 350px;
+        left: 196px;
+        width: 200px;
+    }
+    .animals{
+        background-size: 137px 202px, 175px 131px;
+    }
+    #cheetash{
+        display: none;
+    }
+    #Penguins{
+        display: none;
+    }
+    .wrapper{
+        width: 659px;
+    }
+    .box-center{
+        width: 800px;
+    }
+    .main-txt{
+        left: 300px;
+    }
+    .title2{
+        width: 626px;
+        left: 228px;
+        font-size: 21px;
+    }
+    .text2{
+        left: 228px;
+        font-size: 16px;
+
+        width: 602px;
+    }
+    .support-txt{
+        width: 542px;
+        left: 228px;
+        font-size: 14px;
+    }
+    .subtitle{
+        left: 431px;
+    }
+    .arrow{
+        display: none;
+    }
+    .arrow-green1 {
+        display: grid;
+        background-image: url(..//..//assets/icons/arrow-green.svg);
+        margin-top: 462px;
+        position: absolute;
+        margin-left: 133px;
+    }
+    .arrow-green2 {
+        display: grid;
+        background-image: url(..//..//assets/icons/arrow-green.svg);
+        margin-top: 462px;
+        position: absolute;
+        margin-left: 330px;
+    }
+    .icon-box{
+        right: 135px;
+    }
+    .item-desc {
+        position: absolute;
+        width: 193px;
+    }
+    .friend-now{
+        margin-left: 185px;
+    }
+    .animal-card {
+        width: 286px;
+        height: 339px;
+    }
+    .strategy-block-txt {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 0px;
+        padding: 0 8px 0 16px;
+        transition: 0.5s;
+    }
+    .img-animal {
+        height: 306px;
+    }
+    .choose-your-favorite{
+        margin-left: 170px;
+    }
+    .card-comment1, .card-comment2, .card-comment3, .card-comment4 {
+        width: 621px;
+        height: 120px;
+    }
+    .comm-content p {
+        width: 605px;
+    }
+    .copy{
+        display: none;
+    }
+    .back {
+        width: 614px;
+        height: 115px;
+    }
+    .title-testimation{
+        left: 210px;
+    }
+    .comm {
+        margin-left: 0;
+    }
+    .bar{
+        overflow: hidden;
+    }
+    input[type=range] {
+        width: 0;
+        height: 0;
+        border-radius: 0;
+    }
+    .button-lf {
+        left: 175px;
+    }
+    .Testimonials{
+        background-size: 137px 202px, 175px 131px;
+    }
+    .foooter-nav{
+        
+    }
+    .footer-navigation {
+        margin-left: 0px;
+    }
+    footer {
+        height: 357px;
+    }
+    .media {
+        margin-left: 510px;
+        bottom: 200px;
+    }
+    .footer-title-box{
+        display: none;
+    }
+    .logo-footer{
+        margin-left: 0;
+    }
+    .donate {
+        margin-left: 0px;
+    }
+    .img-animal img{
+        width: 100%;
+        height: 88%;
+    }
+}
+    @media (max-width: 639px){
+    .promo {
+    height: 250px;
+    }
+    .content {
+        height: 168%;
+    }
+    .favorite_animal_circle {
+        width: 200px;
+        height: 200px;
+        margin-left: 276px;
+        margin-top: 37px;
+    }
+    .promo-content {
+        width: 187px;
+        height: 333px;
+        font-size: 43px;
+        margin-left: 200px;
+        margin-bottom: -94px;
+    }
+    .watch-online {
+        position: absolute;
+        top: 183px;
+        right: 20px;
+    }
+    .card-icon{
+        margin-top: 30px;
+    }
+    .icon-box{
+        width: 300px;
+        top: 70px;
+        left: -80px;
+    }
+    .wrapper{
+        width: 359px;
+    }
+    .backstage {
+        padding-top: 120px;
+        padding-bottom: 20px;
+        background-image: url(../../assets/images/flower_foto12.png);
+        background-position: center right 0;
+        background-repeat: no-repeat;
+    }
+    .backstage-box-txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+        width: 300px;
+    }
+    .title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 120%;
+    }
+    .img-animal img{
+        width: 100%;
+        height: 88%;
+    }
+    .animal-box {
+        margin-left: 6px;
+    }
+    .animal-card {
+        width: 227px;
+        height: 234px;
+    }
+    .box-buttons{
+        display: none;
+    }
+    .box-center {
+        width: 384px;
+        margin-left: 80px;
+    }
+    .img-animal {
+        height: 206px;
+    }
+    .box-center{
+        gap: 40px 20px;
+    }
+    header {
+        height: 40px;
+    }
+    .backstage-box-txt p {
+        font-size: 10px;
+    }
+    .backstage-box-txt{
+        gap: 11px;
+    }
+    .choose-your-favorite {
+        margin-left: 66px;
+    }
+    .header__popup {
+        width: 160px;
+        height: 141px;
+        top: 40px;
+        font-size: 10px;
+    }
+    .header__popup #menu li {
+        padding-bottom: 2px;
+    }
+    .header__popup > .logo {
+        color: #E47209;
+        border-color: #E47209;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    .main-txt {
+        left: 161px;
+        font-size: 30px;
+        top: -66px;
+    }
+    .subtitle {
+        left: 282px;
+        top: 50px;
+    }
+    .title2 {
+        width: 217px;
+        left: 280px;
+        top: -16px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .text2{
+        display: none;
+    }
+    .support-txt{
+        display: none;
+    }
+    .logo {
+        margin-left: 43px;
+    }
+    .pick-and-feed-box{
+        width: 360px;
+        height: 1172px;
+    }
+    .card-icon img{
+        width: 100%;
+        height: 100%;
+    }
+    .pick-and-feed{
+        height: 1252px;
+    }
+    .friend-now {
+    margin-left: 43px;
+    }
+    .title-testimation {
+        left: 68px;
+    }
+    .card-comment1, .card-comment2, .card-comment3, .card-comment4 {
+        width: 350px;
+        height: 120px;
+    }
+    .back {
+        width: 343px;
+        height: 115px;
+    }
+    .comm {
+        margin-left: 0;
+        width: 400px;
+    }
+    .comm-content p {
+        font-size: 10px;
+        width: 330px;
+    }
+    .button-lf {
+        left: -344px;
+    }
+    .logo-footer {
+        margin-left: 100px;
+        border: none;
+        width: 200px;
+    }
+    footer > .wrapper > .logo-footer > .logo-text > a > .logo-bamboo{
+        position: absolute;
+        background-image: url(../../assets/icons/bamboo.svg);
+        top: -3px;
+        left: 79px;
+        width: 20px;
+        height: 20.98px;
+        background-repeat: no-repeat;
+    }
+    .donate {
+        top: 50px;
+        margin-left: 50px;
+    }
+    .media {
+        margin-left: 82px;
+        bottom: 123px;
+        width: 300px;
+    }
+    #donate{
+        display: none;
+    }
+    .footer-navigation{
+        margin-left: 10px;
+    }
+}
+  
+  @media (max-width: 999px) {
+    .header__burger {
+      margin-top: 20px;
+      margin-left: 450px;
+      display: block;
+    }
+  }
+  @media(max-width: 699px){
+    .header__burger {
+        margin-top: 20px;
+        margin-left: 130px;
+        display: block;
+      }
+  }
+  @media (max-width: 999px) {
+    .burgerline {
+      width: 18px;
+      height: 2px;
+      background: #FFFFFF;
+      border-radius: 2px;
+      margin: 2px 0;
+      display: block;
+    }
+  }
+  
+  @media (max-width: 999px) {
+    .header__nav nav {
+      display: none;
+    }
+  }
