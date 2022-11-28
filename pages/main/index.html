@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=\, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,11 +16,11 @@
        <div class="header-box">
         <div class="logo_and_menu">
          <div class="nav-wrapper">
-            <div class="logo">
+            <div class="logo" id="logo-main">
                 <span class="logo-text"><a href="#"><div class="logo-bamboo"></div><h1>PetStory online</h1></a></span>
             </div>
            <div class="nav-and-designed">
-                <nav class="nav header-nav">
+                <nav class="nav header-nav" id="menu">
                     <li class="nav-item"><span class="nav-text active-page"><a href="#">About</a></span></li>
                     <li class="nav-item"><span class="nav-text"><a href="#">Map</a></span></li>
                     <li class="nav-item"><span class="nav-text"><a href="#">Zoos</a></span></li>
@@ -28,8 +28,34 @@
                     <li class="nav-item"><span class="nav-text"><a href="#">Contact us</a></span></li>
                 </nav>
                 <div class="designed-text">
-                    <li><a class="designed-link" href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1">Designed by ©</a></li>
+                    <li><a class="designed-link" id="design" href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1">Designed by ©</a></li>
                 </div>
+                </div>
+                <div class="header__burger" id="burgericon">
+                  <div class="burgerline"></div>
+                  <div class="burgerline"></div>
+                  <div class="burgerline"></div>
+              </div>
+          </div>
+          <div class="header__popup" id="burgerpopup">
+              <ul id="burger">
+
+              </ul>
+          </div>
+      </div>
+  </header>
+  <main>
+      <div class="favorite">
+          <div class="container">
+              <div class="favorite__info">
+                  <div class="circle"></div>
+                  <div class="favorite__block">
+                      <p class="favorite__text">Watch your <span>favorite</span> animal online</p>
+                      <button class="favorite__button buttonOne">wath online</button>
+                  </div>
+              </div>
+          </div>
+      </div>
             </div>
             </div>
             </div>
@@ -65,11 +91,10 @@
     <div class="wrapper">
     <div class="animal-box">
     <div class="box-buttons">
-        <button class="btn-left"></button>
-        <button class="btn-right"></button>
+        <button class="button btn-left"></button>
+        <button class="button btn-right"></button>
     </div>
     <div class="card-box">
-      <div class="box-second"></div>
       <div class="box-center">
           <div class="animal-card">
             <div class="img-animal">
@@ -77,7 +102,7 @@
             </div>
         <div class="strategy-block-txt">
           <div class="animal-text">
-        <h3>giant Pandas</h3>
+        <h3>Giant Pandas</h3>
         <span>Native to Southwest China</span>
         </div>
         <div class="food"><img src="../../assets/icons/banana-bamboo_icon.svg" alt="banan"></div>
@@ -95,13 +120,13 @@
         <div class="food"><img src="../../assets/icons/meet-fish_icon.svg" alt="meat"></div>
       </div>
       </div>
-      <div class="animal-card">
+      <div class="animal-card" id="cheetash">
         <div class="img-animal">
         <img src="../../assets/images/Animals-cards-5.jpg" alt="panda">
         </div>
         <div class="strategy-block-txt">
           <div class="animal-text">
-        <h3>cheetahs</h3>
+        <h3>Cheetahs</h3>
         <span>Native to Africa</span>
         </div>
         <div class="food"><img src="../../assets/icons/meet-fish_icon.svg" alt="meat"></div>
@@ -131,7 +156,7 @@
         <div class="food"><img src="../../assets/icons/banana-bamboo_icon.svg" alt="meat"></div>
       </div>
       </div>
-      <div class="animal-card">
+      <div class="animal-card" id="Penguins">
         <div class="img-animal">
         <img src="../../assets/images/Animals-cards-6.jpg" alt="panda">
         </div>
@@ -171,6 +196,9 @@
           <div class="arrow">
           <img src="../../assets/icons/big-arrow.svg" alt="arrow">
           </div>
+          <div class="arrow-green1">
+            <img src="../../assets/icons/arrow-green.svg" alt="arrow">
+            </div>
           <div class="card-icon">
           <img src="../../assets/icons/zoo.svg" alt="hand with grass">
           <div>
@@ -180,6 +208,9 @@
           <div class="arrow">
           <img src="../../assets/icons/big-arrow.svg" alt="arrow">
           </div>
+          <div class="arrow-green2">
+            <img src="../../assets/icons/arrow-green.svg" alt="arrow">
+            </div>
           <div class="card-icon">
           <img src="../../assets/icons/monkey.svg" alt="monkey">
           <div>
@@ -202,46 +233,46 @@
     </div>
   <div class="layout-3-column">
     <div class="comm">
-      <div class="card-comment">
+      <div class="card-comment1">
         <div class="back">
       <div class="comm-content">
         <img src="../../assets/icons/user_icon.svg" alt="user-no-picture">
         <h5>Michael John </h5>
         <span class="comm-title">Local Austria•Today</span>
-        <p>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.</p>
-        <p>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.</p>
+        <p class="copy1">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.</p>
+        <p class="copy">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.</p>
       </div>
       </div>
       </div>
-      <div class="card-comment">
+      <div class="card-comment2">
         <div class="back">
       <div class="comm-content">
         <img src="../../assets/icons/user1.svg" alt="user-no-picture">
         <h5>Oska Samborska</h5>
         <span class="comm-title">Local Austria•Yesterday</span>
-        <p> Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.</p>
-        <p>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.</p>
+        <p class="copy1"> Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas.</p>
+        <p class="copy">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.</p>
       </div>
       </div>
       </div>
-      <div class="card-comment">
+      <div class="card-comment3">
         <div class="back">
       <div class="comm-content">
         <img src="../../assets/icons/user2.svg" alt="user-no-picture">
         <h5>Fredericka Michelin</h5>
         <span class="comm-title">Local Austria•Yesterday</span>
-        <p>My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. The best online zoo I’ve met.</p>
-        <p>My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.</p>
+        <p class="copy1">My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo</p>
+        <p class="copy">My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.</p>
       </div>
       </div>
       </div>
-      <div class="card-comment">
+      <div class="card-comment4">
         <div class="back">
       <div class="comm-content">
         <img src="../../assets/icons/user3.svg" alt="user-no-picture">
         <h5>Mila Riksha</h5>
         <span class="comm-title">Local Austria•Yesterday</span>
-        <p>The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals. The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.</p>
+        <p class="copy1">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals. The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.</p>
       </div>
       </div>
       </div>
@@ -281,11 +312,12 @@
             <li class="nav-item"><span class="nav-text active-page"><a href="#">About</a></span></li>
             <li class="nav-item"><span class="nav-text"><a href="#">Map</a></span></li>
             <li class="nav-item"><span class="nav-text"><a href="#">Zoos</a></span></li>
-            <li class="nav-item"><span class="nav-text"><a href="index.html">Donate</a></span></li>
-            <li class="nav-item"><span class="nav-text"><a href="#">Contact us</a></span></li>
-        </nav>
+            <li class="nav-item" id="donate"><span class="nav-text"><a href="index.html">Donate</a></span></li>
+            <li class="nav-item" id="donate"><span class="nav-text"><a href="#">Contact us</a></span></li>
+        </nav> 
     </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
