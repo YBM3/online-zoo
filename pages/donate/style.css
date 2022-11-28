@@ -8,6 +8,7 @@ html{
 body{
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
+    overflow-x:hidden;
 }
 li{
     display: flex;
@@ -597,4 +598,445 @@ footer{
     border: none;
     border-radius: 25px;
     cursor: pointer;
+}
+.header__popup {
+    position: absolute;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    top: 50px;
+    height: 329px;
+    width: 640px;
+    background-color: #ffffff;
+    z-index: 5;
+    left: -250%;
+  }
+  .header__burger {
+    display: none;
+  }
+  .header__burger:hover {
+    cursor: pointer;
+  }
+  .burgerline {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .header__popup #menu {
+    padding-left: 10px;
+  }
+  
+  .header__popup #menu a {
+    color: #000000;
+  }
+  
+  .header__popup #menu a:hover {
+    color: #E47209;
+  }
+  
+  .header__popup #menu li {
+    padding-bottom: 15px;
+  }
+  
+  .header__popup #menu .active {
+    color: #F9804B;
+  }
+  
+  .header__popup #design a {
+    color: #000000;
+    padding-left: 10px;
+  }
+  
+  .header__popup #design a:hover {
+    color: #E47209;
+  }
+  .open {
+    left: 0%;
+  }
+  .header__popup #menu .active {
+    color: #F9804B;
+  }
+  .lineactive div:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  
+  .lineactive div:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .lineactive div:nth-child(3) {
+    -webkit-transform: translateY(0px) rotate(-45deg);
+            transform: translateY(0px) rotate(-45deg);
+  }
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__nav img {
+    margin-right: 5px;
+  }
+@media (max-width: 1599px){
+    .wrapper{
+        width: 1000px;
+    }
+    .subtitle2{
+        width: 800px;
+    }
+    .text1{
+        margin-top: 50px;
+    }
+    .designed-text {
+        padding-left: 275px;
+    }
+    .main-txt{
+        left: 269px;
+    }
+    .progress-bar-background{
+        width: 870px;
+    }
+    .progress-bar{
+        width: 940px;
+    }
+    .text2{
+        left: 346px;
+    }
+    .support-txt{
+        left: 346px;
+    }
+    .donate-amount{
+        margin-left: -60px;
+    }
+    .donate-date {
+        margin-left: -60px;
+    }
+    .feed-friend-button {
+        margin-left: -60px;
+    }
+    .pick-feed__social {
+        text-align: center;
+        color: #333B41;
+        margin-left: -60px;
+    }
+    .footer-title-box {
+        margin-left: 580px;
+        margin-top: -20px;
+    }
+}
+@media (max-width: 999px){
+    .wrapper{
+        width: 700px;
+    }
+    .designed-link{
+        color:#000000;
+        font-weight: bolder;
+        font-weight: 500;
+        margin-left: 10px;
+    }
+    .subtitle2{
+        font-size: 24px;
+        width: 570px;
+    }
+    .header-nav{
+        display: none;
+    }
+    .header__burger {
+        margin-top: 20px;
+        margin-left: 350px;
+        display: block;
+    }
+    .header__popup{
+        top: 80px;
+    }
+    header > .wrapper > .header-box > .logo_and_menu > .nav-wrapper >.logo {
+        border: none;
+    }
+    .designed-text{
+        display: none;
+    }
+    .burgerline {
+        width: 18px;
+        height: 2px;
+        background: #FFFFFF;
+        border-radius: 2px;
+        margin: 2px 0;
+        display: block;
+    }
+      .header__popup #menu li {
+        padding-bottom: 15px;
+        display: list-item;
+        text-align: left;
+        position: relative;
+    }
+    .header__popup > nav {
+        display:grid;
+    }
+    .header__popup > .logo{
+        color: #E47209;
+        border-color: #E47209;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .header__popup > .logo > .logo-text > a > .logo-bamboo{
+        background-image: url(../../assets/icons/bamboo-orange.svg);
+    }
+    .main-txt{
+        left: 120px;
+    }
+    .subtitle3 {
+        margin-top: 43px;
+        margin-bottom: 0px;
+    }
+    .title2{
+        width: 630px;
+        text-align: center;
+        left: 30px;
+    }
+    .text2 {
+        left: 118px;
+    }
+    .support-txt {
+        left: 18px;
+    }
+    .x-icon {
+        position: relative;
+        width: 14px;
+        height: 14px;
+        left: 293px;
+        top: -65px;
+    }
+    .panda-draw {
+        position: relative;
+        width: 268px;
+        height: 198px;
+        left: 374px;
+    }
+    .progress-bar-background{
+        width: 700px;
+    }
+    .progress-bar{
+        width: 940px;
+    }
+    .progress-bar-background {
+        margin-left: 0px;
+    }
+    .progress-bar-box {
+        justify-content: flex-start;
+        gap: 30px;
+    }
+    .progress-bar-input:checked+label, .progress-bar-input:not(:checked)+label {
+        margin-left: 0px;
+    }
+    .donate-amount{
+        margin-left: -230px;
+    }
+    .donate-date {
+        margin-left: -230px;
+    }
+    .feed-friend-button {
+        margin-left: -230px;
+    }
+    .pick-feed__social {
+        text-align: center;
+        color: #333B41;
+        margin-left: -223px;
+    }
+    .footer-navigation {
+        margin-left: 0px;
+    }
+    footer {
+        height: 357px;
+    }
+    .media {
+        margin-left: 510px;
+        bottom: 200px;
+    }
+    .footer-title-box{
+        display: none;
+    }
+    .logo-footer{
+        margin-left: 0;
+    }
+    .donate {
+        margin-left: 0px;
+    }
+    .media {
+        margin-left: 584px;
+        bottom: 200px;
+    }
+}
+@media (max-width: 639px){
+    .wrapper{
+        width: 400px;
+    }
+    .header__burger {
+        margin-left: 141px;
+    }
+    header{
+        height: 40px;
+    }
+    .header__popup {
+        height: 200px;
+        width: 200px;
+        top: 40px;
+    }
+    .header__popup #menu li {
+        padding-bottom: 2px;
+    }
+    .header__popup > .logo {
+        color: #E47209;
+        border-color: #E47209;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .promo{
+        height: 200px;
+    }
+    .subtitle2 {
+        font-size: 26px;
+        width: 418px;
+    }
+    .text1{
+        font-size: 12px;
+        width: 379px;
+    }
+    .subtitle3 {
+        margin-top: 96px;
+        margin-bottom: -50px;
+    }
+    .pick-and-feed-box {
+        position: relative;
+        display: flex;
+        height: 964px;
+        left: 0;
+        top: 69px;
+        backdrop-filter: blur(2px);
+        background: rgba(253, 253, 255, 0.52);
+        border-radius: 20px;
+        width: 380px;
+    }
+    .main-txt{
+        font-size: 32px;
+        left: -35px;
+    }
+    .title2 {
+        width: 418px;
+        text-align: center;
+        left: -13px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .text2 {
+        left: 65px;
+        top: 90px;
+        font-size: 50px;
+    }
+    .support-txt {
+        left: -17px;
+        top: 110px;
+        font-size: 14px;
+    }
+    .x-icon {
+        position: relative;
+        width: 14px;
+        height: 14px;
+        left: 164px;
+        top: -140px;
+        scale: 0.69;
+    }
+    .panda-draw {
+        position: relative;
+        width: 268px;
+        height: 198px;
+        left: 133px;
+        scale: 0.6;
+        top: -67px;
+    }
+    .pick-and-feed-box{
+        height: 800px;
+    }
+    .progress-bar-background{
+        width: 380px;
+    }
+    .progress-bar{
+        width: 440px;
+    }
+    .progress-bar-background {
+        margin-left: 0px;
+    }
+    .progress-bar-box {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .progress-bar-input:checked+label, .progress-bar-input:not(:checked)+label {
+        margin-left: 0px;
+    }
+    .progress-bar-input:checked+label, .progress-bar-input:not(:checked)+label {
+        display: inline-block;
+        position: relative;
+        color: #333B41;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+        z-index: 1;
+        cursor: pointer;
+        margin-left: 0px;
+        top: 17px;
+    }
+    .progress-bar-amount {
+        margin-bottom: 15px;
+        margin-left: 0px;
+    }
+    .donate-form {
+        margin-top: 0px;
+    }
+    .donate-amount{
+        margin-left: -85px;
+    }
+    .donate-date {
+        margin-left: -85px;
+    }
+    .feed-friend-button {
+        margin-left: -85px;
+    }
+    .pick-feed__social {
+        text-align: center;
+        color: #333B41;
+        margin-left: -85px;
+    }
+    .pick-and-feed {
+        background: linear-gradient(rgba(254, 210, 144, 0.7), rgba(254, 189, 171, 1), rgba(254, 210, 144, 0.7));
+        position: relative;
+        display: flex;
+        height: 1282px;
+    }
+    .logo-footer {
+        margin-left: 100px;
+        border: none;
+        width: 200px;
+    }
+    footer > .wrapper > .logo-footer > .logo-text > a > .logo-bamboo{
+        position: absolute;
+        background-image: url(../../assets/icons/bamboo.svg);
+        top: -3px;
+        left: 79px;
+        width: 20px;
+        height: 20.98px;
+        background-repeat: no-repeat;
+    }
+    .donate {
+        top: 50px;
+        margin-left: 50px;
+    }
+    .media {
+        margin-left: 82px;
+        bottom: 123px;
+        width: 300px;
+    }
+    #donate{
+        display: none;
+    }
+    .footer-navigation{
+        margin-left: 10px;
+    }
 }
