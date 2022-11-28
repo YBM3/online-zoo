@@ -16,11 +16,11 @@
        <div class="header-box">
         <div class="logo_and_menu">
          <div class="nav-wrapper">
-            <div class="logo">
+            <div class="logo" id="logo-main">
                 <span class="logo-text"><a href="#"><div class="logo-bamboo"></div><h1>PetStory online</h1></a></span>
             </div>
            <div class="nav-and-designed">
-                <nav class="nav header-nav">
+                <nav class="nav header-nav" id="menu">
                     <li class="nav-item"><span class="nav-text"><a href="https://ybm3.github.io/online-zoo/pages/main/">About</a></span></li>
                     <li class="nav-item"><span class="nav-text"><a href="#">Map</a></span></li>
                     <li class="nav-item"><span class="nav-text"><a href="#">Zoos</a></span></li>
@@ -28,13 +28,18 @@
                     <li class="nav-item"><span class="nav-text"><a href="#">Contact us</a></span></li>
                 </nav>
                 <div class="designed-text">
-                    <li><a class="designed-link" href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1">Designed by ©</a></li>
+                    <li><a class="designed-link" id="design" href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1">Designed by ©</a></li>
+                </div>
+                </div>
+                <div class="header__burger" id="burgericon">
+                    <div class="burgerline"></div>
+                    <div class="burgerline"></div>
+                    <div class="burgerline"></div>
                 </div>
             </div>
+            <div class="header__popup" id="burgerpopup">
             </div>
             </div>
-        </div>
-    </div>
 </header>
 <section class="promo">
     <div class="wrapper">
@@ -141,7 +146,7 @@
   <footer class="footer">
     <div class="wrapper">
       <div class="logo-footer">
-        <span class="logo-text"><a href="#"><div class="logo-bamboo"></div><h1>PetStory online</h1></a></span>
+        <span class="logo-text"><a href="#"><div class="logo-bamboo" id="bamboo"></div><h1>PetStory online</h1></a></span>
       </div>
       <div class="footer-title-box">
         <span class="subtitle-footer">Subscribe to our news</span>
@@ -166,11 +171,11 @@
             <li class="nav-item"><span class="nav-text"><a href="#">About</a></span></li>
             <li class="nav-item"><span class="nav-text"><a href="#">Map</a></span></li>
             <li class="nav-item"><span class="nav-text"><a href="#">Zoos</a></span></li>
-            <li class="nav-item"><span class="nav-text active-page"><a href="index.html">Donate</a></span></li>
             <li class="nav-item"><span class="nav-text"><a href="#">Contact us</a></span></li>
         </nav>
     </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
