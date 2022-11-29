@@ -4,6 +4,7 @@
 }
 html{
     font-size: 10px;
+    overflow-x:hidden;
 }
 body{
     font-size: 1.6rem;
